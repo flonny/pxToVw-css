@@ -9,6 +9,13 @@
 - 将设置宽度改为640px 
 - 通过sass 函数去进行页面布局
 
+### 使用
+```
+git clone https://github.com/fanyuedong/pxToRem.git
+cd pxToRem
+npm install
+gulp
+```
 #### 核心函数
 ```scss
 $screenwidth: 750;
