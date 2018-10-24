@@ -1,0 +1,6 @@
+$screenwidth: 750;
+
+@function pxToVw($n) {
+
+  @return unquote($n * 100/$screenwidth+'vw');
+}
