@@ -1,0 +1,31 @@
+{
+  "name": "pxtorem",
+  "version": "1.0.0",
+  "description": "将px转换为rem，将所有移动设备的宽度都设置为750rem",
+  "main": "pxtorem.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fanyuedong/pxToRem.git"
+  },
+  "author": "fanyuedong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fanyuedong/pxToRem/issues"
+  },
+  "homepage": "https://github.com/fanyuedong/pxToRem#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
