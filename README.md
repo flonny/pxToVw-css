@@ -1,0 +1,130 @@
+# pxToVw
+
+- 移动端适配方案
+
+- 设置屏幕宽度 或者 设计稿宽度为750px（宽）
+- 100vw = 750
+- 1个单位（宽） 为 （100/750)vw
+- 如果设计稿宽度为640px
+- 将设置宽度改为640px 
+- 通过sass 函数去进行页面布局
+
+#### 核心函数
+```scss
+$screenwidth: 750;
+@function pxToVw($n) {
+  @return unquote($n * 100/$screenwidth+'vw');
+}
+```
+#### 使用
+```scss
+@import 'pxToVw';
+body{
+  padding: 0;
+  margin: 0;
+}
+
+
+.temp {
+  text-align: center;
+  font-size: pxToVw(200);
+  line-height: pxToVw(280);
+  opacity: 0.8;
+}
+
+.weather {
+  font-size: pxToVw(40);
+  line-height: pxToVw(56);
+  opacity: 0.65;
+  text-align: center;
+}
+
+.weather-wrapper {
+  position: relative;
+  padding-top: pxToVw(174);
+  padding-bottom: pxToVw(250);
+}
+
+.weather-bg {
+  z-index: -1;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.timetips {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: pxToVw(40);
+  margin-bottom: pxToVw(45);
+}
+
+.timetips-icon {
+  margin-right: pxToVw(10);
+  width: pxToVw(36);
+  height: pxToVw(28);
+}
+
+.timetips-text {
+  font-size: pxToVw(30);
+  line-height: pxToVw(42);
+  opacity: 0.5;
+}
+
+.forecast-lsit {
+  display: flex;
+  width:pxToVw(750);
+  overflow: scroll;
+}
+
+.forecast-item {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: pxToVw(125);
+  align-items: center;
+}
+
+forecast-time {
+  font-size: pxToVw(30);
+  line-height: pxToVw(42);
+}
+
+.forecast-weather {
+  margin-top: pxToVw(50);
+  width: pxToVw(60);
+  height: pxToVw(60);
+}
+
+.forecast-temp {
+  margin-top: pxToVw(46);
+  font-size: pxToVw(40);
+  line-height: pxToVw(56);
+}
+
+.day-weather {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: pxToVw(700);
+  padding: pxToVw(20) pxToVw(25);
+  font-size: pxToVw(30);
+  opacity: 0.5;
+  line-height: pxToVw(42);
+}
+
+.temp-text {
+  flex-grow: 1;
+  padding-right: pxToVw(30);
+  text-align: right;
+}
+
+.arrow-icon {
+  width: pxToVw(13);
+  height: pxToVw(24);
+}
+```
