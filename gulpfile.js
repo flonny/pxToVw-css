@@ -19,8 +19,7 @@ gulp.task('styles', (done) => {
 gulp.task('script', (done) => {
   gulp.src('./js/**/*.js')
     .pipe(eslint())
-    .pipe(eslint.format())
-    .pipe(eslint.failOnError());
+    .pipe(eslint.format());
   done();
 });
 
