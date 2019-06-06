@@ -11,8 +11,8 @@
 
 ### 使用
 ```
-git clone https://github.com/fanyuedong/pxToRem.git
-cd pxToRem
+git clone https://github.com/fanyuedong/pxToVw.git
+cd pxToVw
 npm install
 gulp
 ```
