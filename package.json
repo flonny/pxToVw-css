@@ -1,7 +1,7 @@
 {
-  "name": "pxtorem",
+  "name": "pxToVw",
   "version": "1.0.0",
-  "description": "将px转换为rem，将所有移动设备的宽度都设置为750rem",
+  "description": "将px转换为vw，将所有移动设备的宽度都设置为750",
   "main": "pxtorem.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,11 +13,11 @@
   "author": "fanyuedong",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fanyuedong/pxToRem/issues"
+    "url": "https://github.com/fanyuedong/pxToVw/issues"
   },
-  "homepage": "https://github.com/fanyuedong/pxToRem#readme",
+  "homepage": "https://github.com/fanyuedong/pxToVw#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.5",
     "eslint": "^5.7.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
